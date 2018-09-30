@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "pokemon";
+    src: url("../images/Pokemon\ Hollow.ttf");
+}
+@font-face {
+    font-family: "pokemon bold";
+    src: url("../images/Pokemon\ Solid.ttf");
+}
+
+body {
+   background: url("/Users/cnyokoyama/Documents/UCLA/Homework/GifTastic/assets/images/background.png");
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-position-y: -85px;
+}
+.header {
+    font-family: pokemon bold;
+    font-size: 85px;
+    color: black;
+    text-shadow: 5px 5px white;
+}
