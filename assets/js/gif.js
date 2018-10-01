@@ -1,13 +1,13 @@
 var pokemons = ["Pikachu", "Squirtle", "Bulbasaur", "Charmander", "Pidgey", "Rattata", "Ekans", "Jigglypuff", "Eevee", "Snorlax"];
 
 function pokemonButtons() {
-    $('#buttonsView').empty();
-    for(var i = 0; i < pokemonArray.length; i++) {
+    $('#buttons').empty();
+    for(var i = 0; i < pokemons.length; i++) {
         var a = $('<button>')
         a.addClass('pokemon');
         a.attr('data-name', pokemons[i]);
         a.text(pokemons[i]);
-        $('#buttonsView').append(a);
+        $('#buttons').append(a);
     }
 }
   
@@ -20,11 +20,11 @@ $("#addPokemon").on("click", function() {
 
 function displayGifs() {
     var pokemon = $(this).attr("data-name");
-    var queryURL = "https://api.giphy.com/v1/gifs/search?=" + pokemon + "&api_key=Tzq7TnG9N5kCxDVQ9o0FjCjCin7mwR7F&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?=" + pokemon + "&api_key=9Tzq7TnG9N5kCxDVQ9o0FjCjCin7mwR7F&limit=10";
     $.ajax({url: queryURL, method: "GET"}).done(function (response) {
         var results = response.data;
         for (var i = 0; i < results.length; i++) {
-            var gifDiv = $('div class=gifs>');
+            var gifDiv = $('<div class=gifs>');
             var pokemonGif = $('<img>');
             pokemonGif.attr('src', results[i].images.fixed_height_still.url);
             pokemonGif.attr('title', "Rating: " + results[i].rating);
@@ -50,6 +50,6 @@ function displayGifs() {
         }
     });
 
-    $(document).on("click", ".show", displayGifs);
+    $(document).on("click", ".pokemon", displayGifs);
     pokemonButtons();
 }

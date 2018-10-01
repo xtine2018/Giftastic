@@ -43,3 +43,15 @@ body {
     font-size: 30px;
     margin: 50px;
 }
+#addPokemon {
+    text-align: center;
+    font-family: pokemon bold;
+    font-size: 25px;
+}
+#pokemon-form {
+    text-align: center;
+    color: rgb(238, 200, 75);
+    text-shadow: 2px 2px black;
+    font-family: pokemon bold;
+    font-size: 40px;
+}
