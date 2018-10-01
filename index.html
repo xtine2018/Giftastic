@@ -5,14 +5,14 @@
   <head>
     <meta charset="UTF-8">
     <title>Pokemon</title>
+        <!-- Added a link to Bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- reset stylesheet -->
     <link rel="stylesheet" href="assets/css/reset.css"/>
     <!-- css stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css"/>
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <!-- Added a link to Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- Added a link to Font Awesome CDN-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- viewport thing -->
@@ -20,8 +20,43 @@
   </head>
 
 <body>
-
 <div class="container">
-<div class="header">blah blah blah</div>
+<div class="title">
+<img src="/Users/cnyokoyama/Documents/UCLA/Homework/Giftastic/assets/images/Pokémon_Title.png" width="500" alt="pokemon"/>
+</div>
+<div class="headerTitle">GIF Catcher</div>
+<div class="mainContent">
+<div id="buttons">
+  <button class="pokemon" data-name="Pikachu">Pikachu</button>
+  <button class="pokemon" data-name="Squirtle">Squirtle</button>
+  <button class="pokemon" data-name="Bulbasaur">Bulbasaur</button>
+  <button class="pokemon" data-name="Charmander">Charmander</button>
+  <button class="pokemon" data-name="Pidgey">Pidgey</button>
+  <button class="pokemon" data-name="Rattata">Rattata</button>
+  <button class="pokemon" data-name="Ekans">Ekans</button>
+  <!-- <button class="pokemon" data-name="Jigglypuff">Jigglypuff</button>
+  <button class="pokemon" data-name="Eevee">Eevee</button>
+  <button class="pokemon" data-name="Snorlax">Snorlax</button> -->
+</div>
+<br>
+<div class="form">
+<form id="pokemon-form">
+  <label id="add" for="pokemon-input">Catch your favorite Pokemon here!</label>
+  <input type="text" class="form-control" id="pokemon-input">
+  <input id="addPokemon" type="submit" value="Catch 'em!">
+</form>
+<br>
+<div id="buttonsView">
+</div>
+<div id="gifsView">
+  
+</div>
+</div>
+</div>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/js/gif.js"></script>
+
+</body>
+</html>   

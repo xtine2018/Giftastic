@@ -8,14 +8,25 @@
 }
 
 body {
-   background: url("/Users/cnyokoyama/Documents/UCLA/Homework/GifTastic/assets/images/background.png");
+   background: url("/Users/cnyokoyama/Documents/UCLA/Homework/GifTastic/assets/images/background.jpg");
    background-size: 100%;
    background-repeat: no-repeat;
    background-position-y: -85px;
 }
-.header {
-    font-family: pokemon bold;
-    font-size: 85px;
+.title {
+    text-align: center;
+}
+.headerTitle {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    color: white;
+    margin: -50px;
+}
+#buttons {
+    text-align: center;
     color: black;
-    text-shadow: 5px 5px white;
+    font-family: pokemon bold;
+    font-size: 30px;
+    margin: 50px;
 }
