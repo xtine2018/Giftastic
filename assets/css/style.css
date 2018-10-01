@@ -6,6 +6,10 @@
     font-family: "pokemon bold";
     src: url("../images/Pokemon\ Solid.ttf");
 }
+@font-face {
+    font-family: "road";
+    src: url("../images/The\ Road\ Ahead.otf");
+}
 
 body {
    background: url("/Users/cnyokoyama/Documents/UCLA/Homework/GifTastic/assets/images/background.jpg");
@@ -16,12 +20,21 @@ body {
 .title {
     text-align: center;
 }
+.mainContent {
+    padding-top: 30px;
+}
 .headerTitle {
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 50px;
+    padding-left: 50px;
+    font-family: road;
+    font-size: 100px;
     color: white;
-    margin: -50px;
+    margin: -85px;
+}
+#pokemonFont {
+    font-family: pokemon bold;
+    font-size: 50px;
+    text-shadow: black 2px 2px;
 }
 #buttons {
     text-align: center;
