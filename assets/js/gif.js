@@ -16,11 +16,13 @@ makeButtons();
 $("#addPokemon").on("click", function() {
     var pokemon = $("#pokemon-input").val().trim();
     pokemons.push(pokemon);
+    $("#gifs").empty(); 
     makeButtons();
     return false;
 })
 
 $(document).on('click', 'button', function(){
+    $("#gifs").empty(); 
     var pokemon = $(this).attr("data-name");
     var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=XXa3vkfF45jjJDFAgDVYJWRRoUMI9uSm&q=" + pokemon + "&limit=10";
     $.ajax({url: queryURL, method: "GET"}).done(function (response) {
@@ -34,8 +36,9 @@ $(document).on('click', 'button', function(){
             pokemonGif.attr('data-state', 'still');
             pokemonGif.addClass('gif');
             pokemonGif.attr('data-animate', results[i].images.fixed_height.url);
-            gifDiv.append(pokemonGif)
+            gifDiv.append(pokemonGif);
             $("#gifs").prepend(gifDiv);
+            console.log("animal image", gifDiv,"animal div", pokemonGif, "animal", pokemon);
         }
     });
 
