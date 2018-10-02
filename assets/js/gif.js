@@ -34,7 +34,6 @@ $(document).on('click', 'button', function(){
             pokemonGif.attr('data-state', 'still');
             pokemonGif.addClass('gif');
             pokemonGif.attr('data-animate', results[i].images.fixed_height.url);
-
             gifDiv.append(pokemonGif)
             $("#gifs").prepend(gifDiv);
         }

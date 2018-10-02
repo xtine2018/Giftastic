@@ -10,7 +10,10 @@
     font-family: "road";
     src: url("../images/The\ Road\ Ahead.otf");
 }
+.container {
+    text-align: center;
 
+}
 body {
    background: url("/Users/cnyokoyama/Documents/UCLA/Homework/GifTastic/assets/images/background.jpg");
    background-size: 100%;
@@ -21,6 +24,7 @@ body {
 }
 .mainContent {
     padding-top: 30px;
+    width: 100%;
 }
 .headerTitle {
     text-align: center;
@@ -53,5 +57,10 @@ body {
     text-shadow: 2px 2px black;
     font-family: pokemon bold;
     font-size: 40px;
+}
+
+#gifs {
+    text-align: center;
+    margin: 5px;
 }
 
