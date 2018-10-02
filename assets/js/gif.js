@@ -50,8 +50,5 @@ $(document).on('click', 'button', function(){
             $(this).attr('data-state', 'still');
         }
     });
-
-    $(document).on("click", ".pokemon", displayGifs());
-    makeButtons();
 }
 );})

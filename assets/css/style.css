@@ -15,7 +15,7 @@
 
 }
 body {
-   background: url("/Users/cnyokoyama/Documents/UCLA/Homework/GifTastic/assets/images/background.jpg");
+   background: url("../images/background.jpg");
    background-size: 100%;
 }
 .title {
@@ -59,8 +59,8 @@ body {
 }
 
 .gifs {
-    text-align: center;
     margin: 10px;
     display: inline;
+    text-align: center;
 }
 
