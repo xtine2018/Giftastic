@@ -1,26 +1,28 @@
+$(document).ready(function () {
 var pokemons = ["Pikachu", "Squirtle", "Bulbasaur", "Charmander", "Pidgey", "Rattata", "Ekans", "Jigglypuff", "Eevee", "Snorlax"];
 
-function pokemonButtons() {
+function makeButtons() {
     $('#buttons').empty();
     for(var i = 0; i < pokemons.length; i++) {
-        var a = $('<button>')
-        a.addClass('pokemon');
-        a.attr('data-name', pokemons[i]);
-        a.text(pokemons[i]);
-        $('#buttons').append(a);
+        var button = $('<button>');
+        button.addClass('pokemon');
+        button.attr('data-name', pokemons[i]);
+        button.text(pokemons[i]);
+        $('#buttons').append(button);
     }
 }
-  
+makeButtons();
+
 $("#addPokemon").on("click", function() {
     var pokemon = $("#pokemon-input").val().trim();
     pokemons.push(pokemon);
-    pokemonButtons();
+    makeButtons();
     return false;
 })
 
-function displayGifs() {
+$(document).on('click', 'button', function(){
     var pokemon = $(this).attr("data-name");
-    var queryURL = "https://api.giphy.com/v1/gifs/search?=" + pokemon + "&api_key=9Tzq7TnG9N5kCxDVQ9o0FjCjCin7mwR7F&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=XXa3vkfF45jjJDFAgDVYJWRRoUMI9uSm&q=" + pokemon + "&limit=10";
     $.ajax({url: queryURL, method: "GET"}).done(function (response) {
         var results = response.data;
         for (var i = 0; i < results.length; i++) {
@@ -34,13 +36,13 @@ function displayGifs() {
             pokemonGif.attr('data-animate', results[i].images.fixed_height.url);
 
             gifDiv.append(pokemonGif)
-            $("#gifsView").prepend(gifDiv);
+            $("#gifs").prepend(gifDiv);
         }
     });
 
     $(document).on('click', '.gif', function() {
         var state = $(this).attr('data-state');
-        if(state == 'still') {
+        if(state === 'still') {
             $(this).attr('src', $(this).data('animate'));
             $(this).attr('data-state', 'animate');
         }
@@ -50,6 +52,7 @@ function displayGifs() {
         }
     });
 
-    $(document).on("click", ".pokemon", displayGifs);
-    pokemonButtons();
+    $(document).on("click", ".pokemon", displayGifs());
+    makeButtons();
 }
+);})

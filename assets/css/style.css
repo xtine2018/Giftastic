@@ -14,7 +14,6 @@
 body {
    background: url("/Users/cnyokoyama/Documents/UCLA/Homework/GifTastic/assets/images/background.jpg");
    background-size: 100%;
-   background-repeat: no-repeat;
    background-position-y: -85px;
 }
 .title {
@@ -55,3 +54,4 @@ body {
     font-family: pokemon bold;
     font-size: 40px;
 }
+
