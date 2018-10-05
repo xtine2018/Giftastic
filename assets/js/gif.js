@@ -1,3 +1,12 @@
+//pseudo code//
+// create an array of pokemons that will correlate with buttons//
+// the buttons will then populate 10 still gifs upon click//
+//if the user selects a new button, 10 new gifs will prepend the previously generated gifs//
+//only 10 gifs will be visible on the screen at a time//
+//the 10 gifs will appear on the screen as a still image//
+//upon click the gifs will animate//
+
+
 $(document).ready(function () {
     var pokemons = ["Pikachu", "Squirtle", "Bulbasaur", "Charmander", "Pidgey", "Rattata", "Ekans", "Jigglypuff", "Eevee", "Snorlax"];
     
