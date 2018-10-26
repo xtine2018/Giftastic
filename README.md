@@ -5,7 +5,7 @@ In this assignment, I used the GIPHY API to make a dynamic web page that populat
 
 Like many APIs, GIPHY requires developers to use a key to access their API data. To use the GIPHY API, I created a GIPHY account and then obtained an API Key by creating an app.
 
-<img src="https://drive.google.com/file/d/1Cs5D9t9dVStXiRRpGgTZ_zSm8l29Wfd6/view">
+<a href="https://drive.google.com/file/d/1Cs5D9t9dVStXiRRpGgTZ_zSm8l29Wfd6/view"></a>
 
 Project Instructions:
 
