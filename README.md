@@ -1,11 +1,12 @@
 # Giftastic
+
+<a href="https://imgflip.com/gif/2l05d8"><img src="https://i.imgflip.com/2l05d8.gif" title="made at imgflip.com"/></a>
+
 Overview:
 
 In this assignment, I used the GIPHY API to make a dynamic web page that populates with Pokemom gifs . To finish this task, I called the GIPHY API and used JavaScript and jQuery to change the HTML of my site.
 
 Like many APIs, GIPHY requires developers to use a key to access their API data. To use the GIPHY API, I created a GIPHY account and then obtained an API Key by creating an app.
-
-<a href="https://imgflip.com/gif/2l05d8"><img src="https://i.imgflip.com/2l05d8.gif" title="made at imgflip.com"/></a>
 
 Project Instructions:
 
